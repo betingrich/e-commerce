@@ -3,34 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pro E-commerce</title>
+  <title>Shopify Web</title>
   <link rel="stylesheet" href="style.css">
-  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
-  <script src="https://js.stripe.com/v3/"></script>
 </head>
 <body>
+  <!-- Header -->
   <header>
-    <h1>Pro E-commerce</h1>
+    <div class="logo">Shopify</div>
     <nav>
-      <button id="login-btn">Login</button>
-      <button id="cart-btn">Cart</button>
+      <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
-  <main>
-    <div class="search-bar">
-      <input type="text" id="search-input" placeholder="Search products...">
-      <button id="search-btn">Search</button>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h1>Welcome to Shopify</h1>
+    <p>Your one-stop shop for quality products at amazing prices.</p>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="products">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+      <!-- Example Product -->
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200" alt="Product 1">
+        <h3>Stylish Sneakers</h3>
+        <p>$49.99</p>
+        <a href="https://wa.me/254740007567?text=Hi%20I%20am%20interested%20in%20purchasing%20Stylish%20Sneakers%20for%20$49.99" target="_blank" class="purchase-btn">Purchase</a>
+      </div>
+
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200" alt="Product 2">
+        <h3>Smart Watch</h3>
+        <p>$89.99</p>
+        <a href="https://wa.me/254740007567?text=Hi%20I%20am%20interested%20in%20purchasing%20Smart%20Watch%20for%20$89.99" target="_blank" class="purchase-btn">Purchase</a>
+      </div>
+
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200" alt="Product 3">
+        <h3>Wireless Headphones</h3>
+        <p>$129.99</p>
+        <a href="https://wa.me/254740007567?text=Hi%20I%20am%20interested%20in%20purchasing%20Wireless%20Headphones%20for%20$129.99" target="_blank" class="purchase-btn">Purchase</a>
+      </div>
     </div>
-    <div class="product-list" id="product-list"></div>
-  </main>
+  </section>
 
+  <!-- Footer -->
   <footer>
-    <p>Contact us on <a href="https://wa.me/254740007567" target="_blank">WhatsApp</a>.</p>
+    <p>© 2025 Shopify. All rights reserved.</p>
   </footer>
-
-  <script src="app.js"></script>
 </body>
 </html>
