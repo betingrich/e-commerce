@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pro E-commerce</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+  <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+  <header>
+    <h1>Pro E-commerce</h1>
+    <nav>
+      <button id="login-btn">Login</button>
+      <button id="cart-btn">Cart</button>
+    </nav>
+  </header>
+
+  <main>
+    <div class="search-bar">
+      <input type="text" id="search-input" placeholder="Search products...">
+      <button id="search-btn">Search</button>
+    </div>
+    <div class="product-list" id="product-list"></div>
+  </main>
+
+  <footer>
+    <p>Contact us on <a href="https://wa.me/254740007567" target="_blank">WhatsApp</a>.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
