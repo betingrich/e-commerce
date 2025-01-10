@@ -1,10 +1,45 @@
-/* Same as above, but ensure product-grid is optimized */
+/* General */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
 
+header {
+  background: #333;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .menu {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+header .menu a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Product Grid */
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-  margin-top: 1rem;
+  margin: 2rem;
+}
+
+.product-card {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
 }
 
 .product-card img {
@@ -13,33 +48,33 @@
   object-fit: cover;
 }
 
-.product-card .rating {
-  font-size: 0.9rem;
-  color: #f39c12;
+.rating-bar {
+  width: 100%;
+  background: #eee;
+  height: 10px;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
-.product-details {
-  display: flex;
-  gap: 2rem;
-  padding: 2rem;
+.rating-fill {
+  background: #4caf50;
+  height: 100%;
 }
 
-.product-details img {
-  width: 300px;
-  height: auto;
-  border-radius: 10px;
-}
-
-.details {
-  max-width: 600px;
-}
-
-.details .purchase-btn {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.7rem 1.5rem;
+/* Floating Action Button */
+.fab {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
   background: #007bff;
+  padding: 1rem;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.fab a {
   color: white;
   text-decoration: none;
-  border-radius: 5px;
+  font-size: 1.2rem;
 }
