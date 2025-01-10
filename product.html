@@ -15,18 +15,60 @@
   </header>
 
   <section class="product-details">
-    <img src="https://via.placeholder.com/300" alt="Product Image">
+    <img id="product-image" src="https://via.placeholder.com/300" alt="Product Image">
     <div class="details">
-      <h1>Product Name</h1>
-      <p>Price: $149.99</p>
-      <p>Description: High-quality leather sneakers, perfect for any occasion.</p>
-      <p class="rating">⭐⭐⭐⭐⭐</p>
-      <a href="https://wa.me/254740007567?text=Hi%20I%20am%20interested%20in%20purchasing%20Product%20Name%20for%20$149.99" class="purchase-btn">Purchase Now</a>
+      <h1 id="product-name">Product Name</h1>
+      <p id="product-price">Price: $0.00</p>
+      <p id="product-description">Description: Product details will appear here.</p>
+      <div class="rating-bar">
+        <div id="product-rating" class="rating-fill" style="width: 0%;"></div>
+      </div>
+      <a id="purchase-btn" href="#" class="purchase-btn">Purchase Now</a>
     </div>
   </section>
 
   <footer>
     <p>© 2025 Luxury Store. All rights reserved.</p>
   </footer>
+
+  <script>
+    // Sample Product Data
+    const products = {
+      1: {
+        name: "Classic Leather Sneakers",
+        price: "$149.99",
+        description: "High-quality leather sneakers, perfect for any occasion.",
+        rating: 90,
+        image: "https://via.placeholder.com/300",
+        whatsappLink: "https://wa.me/254740007567?text=Hi%20I%20am%20interested%20in%20purchasing%20Classic%20Leather%20Sneakers",
+      },
+      2: {
+        name: "Designer Sneakers",
+        price: "$199.99",
+        description: "Stylish designer sneakers for the modern look.",
+        rating: 80,
+        image: "https://via.placeholder.com/300",
+        whatsappLink: "https://wa.me/254740007567?text=Hi%20I%20am%20interested%20in%20purchasing%20Designer%20Sneakers",
+      },
+      // Add more products as needed
+    };
+
+    // Extract Product ID from URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const productId = urlParams.get("id");
+
+    // Populate Product Details
+    if (productId && products[productId]) {
+      const product = products[productId];
+      document.getElementById("product-name").textContent = product.name;
+      document.getElementById("product-price").textContent = `Price: ${product.price}`;
+      document.getElementById("product-description").textContent = product.description;
+      document.getElementById("product-rating").style.width = `${product.rating}%`;
+      document.getElementById("product-image").src = product.image;
+      document.getElementById("purchase-btn").href = product.whatsappLink;
+    } else {
+      document.querySelector(".product-details").innerHTML = `<p>Product not found.</p>`;
+    }
+  </script>
 </body>
 </html>
