@@ -3,59 +3,104 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shopify Web</title>
+  <title>Luxury Store</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- Header -->
   <header>
-    <div class="logo">Shopify</div>
+    <div class="logo">Luxury Store</div>
     <nav>
       <ul class="menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#shoes">Shoes</a></li>
+        <li><a href="#clothes">Clothes</a></li>
+        <li><a href="#watches">Watches</a></li>
+        <li><a href="#electronics">Electronics</a></li>
+        <li><a href="#accessories">Accessories</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <h1>Welcome to Shopify</h1>
-    <p>Your one-stop shop for quality products at amazing prices.</p>
-  </section>
-
-  <!-- Products Section -->
-  <section id="products" class="products">
-    <h2>Our Products</h2>
-    <div class="product-grid">
-      <!-- Example Product -->
-      <div class="product-card">
-        <img src="https://via.placeholder.com/200" alt="Product 1">
-        <h3>Stylish Sneakers</h3>
-        <p>$49.99</p>
-        <a href="https://wa.me/254740007567?text=Hi%20I%20am%20interested%20in%20purchasing%20Stylish%20Sneakers%20for%20$49.99" target="_blank" class="purchase-btn">Purchase</a>
+  <!-- Product Categories -->
+  <section id="products">
+    <h1>Our Luxury Products</h1>
+    
+    <!-- Shoes Category -->
+    <div id="shoes" class="category">
+      <h2>Shoes</h2>
+      <div class="product-grid">
+        <!-- Example Product -->
+        <div class="product-card">
+          <img src="https://via.placeholder.com/150" alt="Product Image">
+          <h3>Classic Leather Sneakers</h3>
+          <p>$149.99</p>
+          <p class="rating">⭐⭐⭐⭐⭐</p>
+          <a href="product.html?id=1" class="details-btn">View Details</a>
+        </div>
+        <!-- Add more products dynamically -->
       </div>
+    </div>
 
-      <div class="product-card">
-        <img src="https://via.placeholder.com/200" alt="Product 2">
-        <h3>Smart Watch</h3>
-        <p>$89.99</p>
-        <a href="https://wa.me/254740007567?text=Hi%20I%20am%20interested%20in%20purchasing%20Smart%20Watch%20for%20$89.99" target="_blank" class="purchase-btn">Purchase</a>
+    <!-- Clothes Category -->
+    <div id="clothes" class="category">
+      <h2>Clothes</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="https://via.placeholder.com/150" alt="Product Image">
+          <h3>Designer Jacket</h3>
+          <p>$299.99</p>
+          <p class="rating">⭐⭐⭐⭐</p>
+          <a href="product.html?id=2" class="details-btn">View Details</a>
+        </div>
       </div>
+    </div>
 
-      <div class="product-card">
-        <img src="https://via.placeholder.com/200" alt="Product 3">
-        <h3>Wireless Headphones</h3>
-        <p>$129.99</p>
-        <a href="https://wa.me/254740007567?text=Hi%20I%20am%20interested%20in%20purchasing%20Wireless%20Headphones%20for%20$129.99" target="_blank" class="purchase-btn">Purchase</a>
+    <!-- Watches Category -->
+    <div id="watches" class="category">
+      <h2>Watches</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="https://via.placeholder.com/150" alt="Product Image">
+          <h3>Luxury Gold Watch</h3>
+          <p>$999.99</p>
+          <p class="rating">⭐⭐⭐⭐⭐</p>
+          <a href="product.html?id=3" class="details-btn">View Details</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Electronics Category -->
+    <div id="electronics" class="category">
+      <h2>Electronics</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="https://via.placeholder.com/150" alt="Product Image">
+          <h3>Wireless Headphones</h3>
+          <p>$249.99</p>
+          <p class="rating">⭐⭐⭐⭐</p>
+          <a href="product.html?id=4" class="details-btn">View Details</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Accessories Category -->
+    <div id="accessories" class="category">
+      <h2>Accessories</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="https://via.placeholder.com/150" alt="Product Image">
+          <h3>Diamond Bracelet</h3>
+          <p>$1,499.99</p>
+          <p class="rating">⭐⭐⭐⭐⭐</p>
+          <a href="product.html?id=5" class="details-btn">View Details</a>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 Shopify. All rights reserved.</p>
+    <p>© 2025 Luxury Store. All rights reserved.</p>
   </footer>
 </body>
-</html>
+  </html>
